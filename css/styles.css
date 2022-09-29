@@ -1,0 +1,49 @@
+:root{
+    --color-logo-blue: #2196F3;
+    --color-h-dark: #212121;
+    --color-p-gray: #757575;
+}
+
+/* logo */
+.logo{
+    text-decoration:none ;
+    color: #000000;
+    font-weight: 700;
+        font-size: 26px;
+        line-height: 1.20;
+        letter-spacing: 0.03em;
+}
+
+.logo-web{
+    color: var(--color-logo-blue);
+}
+
+/* navigation bar */
+
+.nav-bar a{
+    text-decoration: none;
+    color: var(--color-h-dark);
+}
+
+.nav-bar a:hover{
+    color: var(--color-logo-blue);
+}
+
+.nav-bar a:focus{
+    color: var(--color-logo-blue);
+}
+
+/* contacts */
+
+.contacts a{
+    text-decoration: none;
+    color: var(--color-p-gray)
+}
+
+.contacts a:hover {
+    color: var(--color-logo-blue);
+}
+
+.contacts a:focus {
+    color: var(--color-logo-blue);
+}
