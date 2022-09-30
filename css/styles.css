@@ -1,13 +1,14 @@
 :root{
     --color-logo-blue: #2196F3;
     --color-mainly-dark: #212121;
-    --color-paragraph-gray: #757575;
-    --color-paragraph-gray-footer: rgba(255, 255, 255, 0.6);
+    --color-secondary-gray: #757575;
+    --color-secondary-gray-footer: rgba(255, 255, 255, 0.6);
     --color-button: #F5F4FA;
 }
 
 /* primary rules */
 body{
+    color: var(--color-mainly-dark);
     font-family: 'roboto', sans-serif;
     background-color: #fff;
     letter-spacing: 0.03em;
@@ -55,7 +56,7 @@ footer .logo-studio {
 }
 
 .nav-bar-footer a{
-    color: var(--color-paragraph-gray-footer);
+    color: var(--color-secondary-gray-footer);
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -66,20 +67,18 @@ footer .logo-studio {
 
 .contacts a{
     text-decoration: none;
-    color: var(--color-paragraph-gray)
+    color: var(--color-secondary-gray)
 }
 
-.contacts a:hover {
-    color: var(--color-logo-blue);
-}
-
+.contacts a:hover,
 .contacts a:focus {
     color: var(--color-logo-blue);
 }
 
 /* buttons */
-button{
+.button{
     font-family: 'roboto', sans-serif;
+    cursor: pointer;
 }
 
 .button-primary{
@@ -96,21 +95,26 @@ button{
  color: var(--color-mainly-dark);
 }
 
-.button-secondary{
+.button-secondary {
     background-color: var(--color-logo-blue);
     color: #fff
 }
 
-.button-secondary:hover, .button-secondary:focus{
-background-color: #fff;
+.button-secondary:hover,
+.button-secondary:focus {
+    background-color: #fff;
     color: var(--color-logo-blue)
 }
 
 /* section hero */
 .section-hero-header{
-
     color:#fff;
     text-align: center;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 /* servise descriprion section */
@@ -128,7 +132,7 @@ background-color: #fff;
 }
 
 .servise-description p {
-    color: var(--color-paragraph-gray);
+    color: var(--color-secondary-gray);
     font-size: 14px;
     line-height: 1.71;
 }
@@ -143,7 +147,7 @@ background-color: #fff;
 }
 
 .our-team p{
-    color: var(--color-paragraph-gray);
+    color: var(--color-secondary-gray);
     font-size: 16px;
     line-height: 1.19;
 }
@@ -179,7 +183,7 @@ footer{
 }
 
 .projects-examples p{
-    color: var(--color-paragraph-gray);
+    color: var(--color-secondary-gray);
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
