@@ -1,8 +1,9 @@
 :root{
     --color-logo-blue: #2196F3;
-    --color-h-dark: #212121;
-    --color-p-gray: #757575;
-    --color-p-gray-footer: rgba(255, 255, 255, 0.6);
+    --color-mainly-dark: #212121;
+    --color-paragraph-gray: #757575;
+    --color-paragraph-gray-footer: rgba(255, 255, 255, 0.6);
+    --color-button: #F5F4FA;
 }
 
 /* primary rules */
@@ -17,7 +18,7 @@ li {
 }
 
 .sections-headers{
-    color: var(--color-h-dark);
+    color: var(--color-mainly-dark);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -46,7 +47,7 @@ footer .logo-studio {
 
 .nav-bar a{
     text-decoration: none;
-    color: var(--color-h-dark);
+    color: var(--color-mainly-dark);
 }
 
 .nav-bar a:hover, .nav-bar a:focus{
@@ -54,7 +55,7 @@ footer .logo-studio {
 }
 
 .nav-bar-footer a{
-    color: var(--color-p-gray-footer);
+    color: var(--color-paragraph-gray-footer);
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -65,7 +66,7 @@ footer .logo-studio {
 
 .contacts a{
     text-decoration: none;
-    color: var(--color-p-gray)
+    color: var(--color-paragraph-gray)
 }
 
 .contacts a:hover {
@@ -77,6 +78,23 @@ footer .logo-studio {
 }
 
 /* buttons */
+button{
+    font-family: 'roboto', sans-serif;
+}
+
+.button-primary{
+                color: var(--color-mainly-dark)
+        }
+
+.button-primary:hover,
+.button-primary:focus {
+    background-color: var(--color-logo-blue);
+    color: #fff
+}
+
+.button-primary{
+ color: var(--color-mainly-dark);
+}
 
 .button-secondary{
     background-color: var(--color-logo-blue);
@@ -102,7 +120,7 @@ background-color: #fff;
 }
 
 .servise-description h3 {
-    color: var(--color-h-dark);
+    color: var(--color-mainly-dark);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -110,7 +128,7 @@ background-color: #fff;
 }
 
 .servise-description p {
-    color: var(--color-p-gray);
+    color: var(--color-paragraph-gray);
     font-size: 14px;
     line-height: 1.71;
 }
@@ -118,14 +136,14 @@ background-color: #fff;
 /* our team */
 
 .our-team h3{
-    color: var(--color-h-dark);
+    color: var(--color-mainly-dark);
     font-size: 16px;
     line-height: 1.19;
     font-weight: 500;
 }
 
 .our-team p{
-    color: var(--color-p-gray);
+    color: var(--color-paragraph-gray);
     font-size: 16px;
     line-height: 1.19;
 }
@@ -141,5 +159,29 @@ footer{
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
+
+}
+
+/* protfolio page */
+
+/* main section */
+
+.portfolio-main-header{
+    display: none;
+}
+
+.projects-examples h2{
+    color: var(--color-mainly-dark);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects-examples p{
+    color: var(--color-paragraph-gray);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
 
 }
